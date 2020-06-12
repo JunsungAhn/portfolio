@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 26 18:23:10 2019
+# Process ID: 12312
+# Current directory: D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.runs/synth_1
+# Command line: vivado.exe -log Frq_Analyzer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Frq_Analyzer.tcl
+# Log file: D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.runs/synth_1/Frq_Analyzer.vds
+# Journal file: D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Frq_Analyzer.tcl -notrace

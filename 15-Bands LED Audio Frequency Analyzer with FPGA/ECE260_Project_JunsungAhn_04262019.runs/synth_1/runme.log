@@ -1,0 +1,512 @@
+
+*** Running vivado
+    with args -log Frq_Analyzer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Frq_Analyzer.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Frq_Analyzer.tcl -notrace
+Command: synth_design -top Frq_Analyzer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8940 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 380.254 ; gain = 99.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Frq_Analyzer' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:490]
+INFO: [Synth 8-6157] synthesizing module 'CLK_Generator' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_Generator' (1#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Microphone' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:266]
+	Parameter M bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Microphone' (2#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:266]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:313]
+	Parameter N bound to: 19 - type: integer 
+	Parameter M bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element SampleArrayCounter_reg was removed.  [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:377]
+WARNING: [Synth 8-6014] Unused sequential element ShiftedBy5bit_reg was removed.  [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:390]
+WARNING: [Synth 8-6014] Unused sequential element Sample_X_Sine_reg was removed.  [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:391]
+WARNING: [Synth 8-6014] Unused sequential element DivBy11bits_reg was removed.  [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:392]
+WARNING: [Synth 8-3848] Net _DataOutToAudio in module/entity RAM does not have driver. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:330]
+WARNING: [Synth 8-3848] Net _READ_DONE in module/entity RAM does not have driver. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:331]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (3#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:313]
+INFO: [Synth 8-6157] synthesizing module 'Speaker' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:478]
+	Parameter M bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Speaker' (4#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:478]
+INFO: [Synth 8-6157] synthesizing module 'SampleSineWave' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'SampleSineWave' (5#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Frq_Analyzer' (6#1) [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:490]
+WARNING: [Synth 8-3331] design RAM has unconnected port _DataOutToAudio[0]
+WARNING: [Synth 8-3331] design RAM has unconnected port _READ_DONE
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[13]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[12]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[11]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[10]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[9]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[8]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 444.137 ; gain = 163.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 444.137 ; gain = 163.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 444.137 ; gain = 163.574
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'BTNU_IBUF'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BTNR_IBUF'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Frq_Analyzer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Frq_Analyzer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.617 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.617 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 788.617 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 788.617 ; gain = 508.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 788.617 ; gain = 508.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 788.617 ; gain = 508.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "_MicDataSampled" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "_RECORD_DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RecordTimeCounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:430]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:405]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:405]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:380]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:380]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:372]
+INFO: [Synth 8-5544] ROM "Memory" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WriteAddress" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "_PROCESS_DONE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "_PROCESS_DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "EvenSampleAnalogVoltage" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Memory" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WriteAddress" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_PROCESS_DONE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_PROCESS_DONE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "EvenSampleAnalogVoltage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'FSMState_reg' in module 'Frq_Analyzer'
+INFO: [Synth 8-5544] ROM "FSMState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FSMState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FSMState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               11
+                 iSTATE2 |                               01 |                               00
+                  iSTATE |                               10 |                               01
+                 iSTATE0 |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FSMState_reg' using encoding 'sequential' in module 'Frq_Analyzer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 788.617 ; gain = 508.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Frq_Analyzer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module CLK_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module Microphone 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 1     
+Module SampleSineWave 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'nolabel_line578/OddSampleAnalogVoltage_reg[7:0]' into 'nolabel_line578/OddSampleAnalogVoltage_reg[7:0]' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:409]
+INFO: [Synth 8-4471] merging register 'nolabel_line578/EvenSampleAnalogVoltage_reg[7:0]' into 'nolabel_line578/EvenSampleAnalogVoltage_reg[7:0]' [D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.srcs/sources_1/new/Main.v:384]
+WARNING: [Synth 8-3917] design Frq_Analyzer has port M_LRSEL driven by constant 0
+WARNING: [Synth 8-3917] design Frq_Analyzer has port AUD_SD driven by constant 1
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port AUD_PWM
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[13]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[12]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[11]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[10]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[9]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port LED[8]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Frq_Analyzer has unconnected port SW[0]
+INFO: [Synth 8-3886] merging instance 'A[0]__0' (FDE) to 'A[1]__0'
+INFO: [Synth 8-3886] merging instance 'A[1]__0' (FDE) to 'A[2]__0'
+INFO: [Synth 8-3886] merging instance 'A[2]__0' (FDE) to 'A[3]__0'
+INFO: [Synth 8-3886] merging instance 'A[3]__0' (FDE) to 'A[4]__0'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\A[4]__0 )
+INFO: [Synth 8-3886] merging instance 'A[5]__0' (FDE) to 'nolabel_line578/EvenSampleAnalogVoltage_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A[6]__0' (FDE) to 'nolabel_line578/EvenSampleAnalogVoltage_reg[1]'
+INFO: [Synth 8-3886] merging instance 'A[7]__0' (FDE) to 'nolabel_line578/EvenSampleAnalogVoltage_reg[2]'
+INFO: [Synth 8-3886] merging instance 'A[0]' (FDE) to 'A[4]'
+INFO: [Synth 8-3886] merging instance 'A[1]' (FDE) to 'A[4]'
+INFO: [Synth 8-3886] merging instance 'A[2]' (FDE) to 'A[4]'
+INFO: [Synth 8-3886] merging instance 'A[3]' (FDE) to 'A[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\A[4] )
+INFO: [Synth 8-3886] merging instance 'A[5]' (FDE) to 'nolabel_line578/OddSampleAnalogVoltage_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A[6]' (FDE) to 'nolabel_line578/OddSampleAnalogVoltage_reg[1]'
+INFO: [Synth 8-3886] merging instance 'A[7]' (FDE) to 'nolabel_line578/OddSampleAnalogVoltage_reg[2]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 833.344 ; gain = 552.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|SampleSineWave | p_0_out    | 32x8          | LUT            | 
+|Frq_Analyzer   | p_0_out    | 32x8          | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+----------------------------+-----------+----------------------+--------------------+
+|Module Name  | RTL Object                 | Inference | Size (Depth x Width) | Primitives         | 
++-------------+----------------------------+-----------+----------------------+--------------------+
+|Frq_Analyzer | nolabel_line578/Memory_reg | Implied   | 512 K x 1            | RAM128X1D x 4096   | 
++-------------+----------------------------+-----------+----------------------+--------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 833.344 ; gain = 552.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 852.965 ; gain = 572.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+----------------------------+-----------+----------------------+--------------------+
+|Module Name  | RTL Object                 | Inference | Size (Depth x Width) | Primitives         | 
++-------------+----------------------------+-----------+----------------------+--------------------+
+|Frq_Analyzer | nolabel_line578/Memory_reg | Implied   | 512 K x 1            | RAM128X1D x 4096   | 
++-------------+----------------------------+-----------+----------------------+--------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |    52|
+|3     |LUT1      |     7|
+|4     |LUT2      |   180|
+|5     |LUT3      |    63|
+|6     |LUT4      |   393|
+|7     |LUT5      |   215|
+|8     |LUT6      |  5509|
+|9     |MUXF7     |   288|
+|10    |MUXF8     |   144|
+|11    |RAM128X1D |  4096|
+|12    |FDRE      |   304|
+|13    |IBUF      |     3|
+|14    |OBUF      |    13|
+|15    |OBUFT     |     7|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               | 11277|
+|2     |  nolabel_line562 |CLK_Generator  |    39|
+|3     |  nolabel_line568 |Microphone     |    40|
+|4     |  nolabel_line578 |RAM            | 11059|
+|5     |  nolabel_line606 |SampleSineWave |   104|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 969.176 ; gain = 344.133
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 969.176 ; gain = 688.613
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4580 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Frq_Analyzer' is not ideal for floorplanning, since the cellview 'RAM' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 969.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4096 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 4096 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 38 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 969.176 ; gain = 700.875
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 969.176 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/junsung.ahn/2019/Spring/ECE260/Frq_Analyzer/Frq_Analyzer.runs/synth_1/Frq_Analyzer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Frq_Analyzer_utilization_synth.rpt -pb Frq_Analyzer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 18:24:48 2019...
